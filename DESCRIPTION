@@ -1,0 +1,8 @@
+Package: TDC_tools
+Title: Functions useful for TDC scoring and data segmentation
+Version: 1.0
+Authors@R: person(“Mehdi”,”Rifai”,email=“mrifai@prosper.com”,role=c(“aut”,”cre”))
+Description: What the package does (one paragraph)
+Depends: R (>=3.2.1)
+License: What license is it under?
+LazyData: True 
