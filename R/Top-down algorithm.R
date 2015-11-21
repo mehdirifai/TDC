@@ -116,14 +116,7 @@ q <- quantile(df[,var[i]],probs = seq(0+cut_size, 1-cut_size, cut_size))
 return(list('outcome'=outcome,'var_name'=var_name,'var_cut'=var_cut,'direction_cut'=direction_cut,'df'=df))}
 
 
-df<-data[,c('FICO','BAE201405ProjLoss','PMI6_1','DTIwoProspLoanAllEmp','REV201','SampleWeight')]
 
-var <- c('PMI6_1','FICO','REV201')
-metric <- c('mean','weighted.mean')
-metric_variable <- rbind(c('BAE201405ProjLoss',1),c('BAE201405ProjLoss','SampleWeight'))
-opt_type <- c('max','max')
-dim_limit<-100
-cut_size<-0.1
 
 t<-MultiCriteriaTopDown(df,var,metric,metric_variable,opt_type,dim_limit,cut_size)
 
