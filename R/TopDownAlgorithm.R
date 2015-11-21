@@ -118,5 +118,4 @@ return(list('outcome'=outcome,'var_name'=var_name,'var_cut'=var_cut,'direction_c
 
 
 
-t<-MultiCriteriaTopDown(df,var,metric,metric_variable,opt_type,dim_limit,cut_size)
 
